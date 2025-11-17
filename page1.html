@@ -1,0 +1,28 @@
+
+<!DOCTYPE html> 
+<html lang= en"> 
+     <head> 
+          <meta charset="UTF-8"> 
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+          <title>Smoothie Maker!</title> 
+     </head> 
+     <body> 
+          <h1 style="color: yellow: font-family="Times New Roman":"Welcome to Smoothie Maker!</h1> 
+               <p>Provide your ingredients, blend, and enjoy — it’s that easy!</p> 
+               <textarea placeholder="Your ingredients"></textarea> 
+               <br> 
+         <button onclick="goToBlendPage()">Blend!</button>
+
+    <script>
+        function goToBlendPage() {
+            const ingredients = encodeURIComponent(
+                document.getElementById("ingredients").value
+            );
+            // Go to blend.html and pass the ingredients
+            window.location.href = "blend.html?ingredients=" + ingredients;
+        }
+    </script>
+</body>
+</html>
+

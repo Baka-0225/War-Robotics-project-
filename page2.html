@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang= en"> 
+     <head> 
+          <meta charset="UTF-8"> 
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+          <title>Blending...</title> 
+     </head> 
+     <body> 
+          <h1>Your Smoothie is Blending.</h1>
+          <p id="result"></p>
+            <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const ingredients = urlParams.get("ingredients");
+        document.getElementById("result").textContent =
+            "Ingredients: " + ingredients;
+    </script>
+</body>
+</html>,
